@@ -18,38 +18,129 @@ body {
 	color: red;
 }
 
-#cover .bg img {
+#cover {
 	position: relative;
+	margin-bottom: 5rem;
+}
+
+#cover .bg img {
 	width: 100%;
 }
 
 #cover .title {
 	position: absolute;
 	top: 0;
-	left: 0%;
+	left: 4rem;
+}
+
+#cover .title h1 {
+	margin: 0;
+	font-size: 2.5rem;
+}
+
+#cover .title h2 {
+	margin: 0;
+	font-size: 3.5rem;
 }
 
 #cover .link {
 	position: absolute;
-	top: 10rem;
-	left: 0;
+  top: 14rem;
+  left: 4rem;
+  font-size: 2rem;
 }
 
 #cover .link ul {
 	list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#profile {
+	padding: 0 4rem;
+	margin-bottom: 5rem;
 }
 
 #profile h2 {
 	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
 }
 
 #profile table {
-	width: 80%;
-	margin: auto;
 	word-break: break-all;
 	border-collapse: collapse;
 }
 
 #profile table tr th {
 	width: 20%;
+	font-weight: normal;
+	padding: 1rem;
+	border-right: solid 0.1rem lightgray;
+}
+
+#profile table tr td {
+	padding: 1rem;
+}
+
+#profile table .border {
+	border-top: solid 0.1rem lightgray;
+	border-bottom: solid 0.1rem lightgray;
+}
+
+#works {
+	padding: 0 4rem;
+	margin-bottom: 5rem;
+}
+
+#works h2 {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
+}
+
+#works .container {
+	margin-bottom: 3rem;
+}
+
+#works .container .box1 img {
+	width: 100%;
+	border: solid 0.1rem lightgray;
+}
+
+#works .container .box2 ul {
+	padding-left: 2rem;
+}
+
+#contact {
+	padding: 0 4rem;
+	margin-bottom: 5rem;
+}
+
+#contact h2 {
+	text-align: center;
+	margin: 4rem 0 2rem 0;
+	font-size: 2.5rem;
+}
+
+#contact h3 {
+	text-align: center;
+}
+
+#contact .mail {
+	text-align: center;
+}
+
+#contact .mail .far {
+	font-size: 3rem;
+  color: #ffffff;
+  background-color: lightgray;
+  border-radius: 2rem;
+}
+
+#footer h2 {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: normal;
+	color: lightgray;
 }
