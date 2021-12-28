@@ -41,6 +41,7 @@ body {
 #cover .title h2 {
 	margin: 0;
 	font-size: 3.5rem;
+	color: red;
 }
 
 #cover .link {
