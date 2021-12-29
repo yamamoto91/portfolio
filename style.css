@@ -12,6 +12,9 @@ body {
 	line-height: 1.75;
 	color: #333333;
 	background-color: #ffffff;
+	background-image: url("img/background_img.jpg");
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #header p {
@@ -41,7 +44,6 @@ body {
 #cover .title h2 {
 	margin: 0;
 	font-size: 3.5rem;
-	color: red;
 }
 
 #cover .link {
@@ -56,6 +58,19 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: 769px) {
+	#cover .bg {
+		display: none;
+	}
+	#cover .title {
+		position: initial;
+	}
+	#cover .link {
+		position: initial;
+	}
+}
+
 
 #profile {
 	padding: 0 4rem;
@@ -109,8 +124,34 @@ body {
 	border: solid 0.1rem lightgray;
 }
 
+#works .container .box3 {
+	display: none;
+}
+
 #works .container .box2 ul {
 	padding-left: 2rem;
+}
+
+
+@media (min-width: 769px) {
+	#works .container {
+		display: flex;
+    justify-content: space-between;
+	}
+	#works .container .box1 {
+		display: none;
+	}
+	#works .container .box3 {
+		display: initial;
+    width: 58%;
+	}
+	#works .container .box3 img {
+		border: solid 0.1rem lightgray;
+    width: 100%;
+	}
+	#works .container .box2 {
+		width: 40%;
+	}
 }
 
 #contact {
@@ -126,6 +167,8 @@ body {
 
 #contact h3 {
 	text-align: center;
+	font-weight: normal;
+	margin-bottom: 2rem;
 }
 
 #contact .mail {
@@ -136,7 +179,10 @@ body {
 	font-size: 3rem;
   color: #ffffff;
   background-color: lightgray;
-  border-radius: 2rem;
+	line-height: 5rem;
+	height: 5rem;
+	width: 5rem;
+	border-radius: 3rem;
 }
 
 #footer h2 {
