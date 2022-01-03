@@ -43,3 +43,10 @@ if(lang === 'ja') {
 document.getElementById('form').select.onchange = function() {
   location.href = document.getElementById('form').select.value;
 }
+
+//ドロワー
+$(document).ready(function(){
+  $('#open_nav').on('click', function(){
+    $('#wrapper, #nav').toggleClass('show');
+  });
+});

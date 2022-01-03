@@ -26,8 +26,23 @@ body {
 	}
 }
 
-#header p {
-	color: red;
+#header {
+	margin-bottom: 2rem;
+}
+
+#header .container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#header .container #form {
+	align-self: center;
+}
+
+#header .hamburger {
+	color: lightgray;
+  margin: 0 2rem;
+	font-size: 4rem;
 }
 
 #cover {
@@ -157,6 +172,7 @@ body {
 
 #works .container .box2 ul {
 	padding-left: 2rem;
+	list-style-type: disclosure-closed;
 }
 
 
@@ -245,4 +261,30 @@ body {
 	#footer h2 {
 		font-size: 2rem;
 	}
+}
+
+#nav {
+	position: fixed;
+	right: -15rem;
+	top: 0;
+	width: 15rem;
+	height: 100%;
+	background-color: lightgray;
+}
+
+#nav ul {
+	font-size: 2rem;
+  list-style-type: disclosure-closed;
+}
+
+#nav ul li {
+	margin: 2rem 0;
+}
+
+.show {
+	transform: translate3d(-15rem, 0, 0);
+}
+
+#wrapper, #nav {
+	transition: transform 0.3s;
 }
