@@ -1,5 +1,6 @@
 'use strict';
 
+//カウントダウン
 function countdown(due) {
   const now = new Date();
 
