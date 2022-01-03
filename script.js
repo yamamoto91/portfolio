@@ -50,3 +50,15 @@ $(document).ready(function(){
     $('#wrapper, #nav').toggleClass('show');
   });
 });
+
+//スムーススクロール
+$('.nav-menu-item-link').on('click', function(event) {
+  event.preventDefault()
+
+  const sectionId = $(this).attr('href');
+  const sectionOffsetTop = $(sectionId).offset().top
+  window.scrollTo({
+    top: sectionOffsetTop,
+    behavior: "smooth",
+  });
+});

@@ -56,6 +56,10 @@ body {
 		display: inline;
     margin: 0 2rem;
 	}
+	#header #nav-pc ul li a {
+		text-decoration: none;
+		color: initial;
+	}	
 }
 
 
@@ -285,6 +289,11 @@ body {
 
 #nav ul li {
 	margin: 2rem 0;
+}
+
+#nav ul li a {
+	text-decoration: none;
+	color: initial;
 }
 
 .show {
