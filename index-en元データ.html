@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portfolio -yamamoto91-</title>
-		<meta name="description" content="This is a portfolio site of web designer yamamoto91">
+		<meta name="description" content="Web Designer yamamoto91 のポートフォリオサイトです">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
 		<script src="https://kit.fontawesome.com/610a043d29.js" crossorigin="anonymous"></script>
@@ -12,7 +12,7 @@
 	<body>
 		<div id="wrapper">
 			<header>
-				<section id="header" class="section">
+				<section id="header">
 					<div class="container">
 						<form id="form">
 							<select name="select">
@@ -20,25 +20,15 @@
 								<option value="index-en.html" selected>English</option>
 							</select>
 						</form>
-						<div class="nav-toggle">
-							<i></i>
-							<i></i>
-							<i></i>
+						<div class="hamburger" id="open_nav">
+							<i class="fas fa-bars"></i>
 						</div>
 						<div id="nav-pc">
-							<ul class="nav-menu">
-								<li class="nav-menu-item">
-									<a href="#header" class="nav-menu-item-link">Top</a>
-								</li>
-								<li class="nav-menu-item">
-									<a href="#profile" class="nav-menu-item-link">Profile</a>
-								</li>
-								<li class="nav-menu-item">
-									<a href="#works" class="nav-menu-item-link">Works</a>
-								</li>
-								<li class="nav-menu-item">
-									<a href="#contact" class="nav-menu-item-link">Contact</a>
-								</li>
+							<ul>
+								<li>Top</li>
+								<li>profile</li>
+								<li>Works</li>
+								<li>Contact</li>
 							</ul>
 						</div>				
 					</div>
@@ -54,21 +44,8 @@
 						<h2>Web Designer</h2>
 						<h3>Portfolio</h3>
 					</div>
-					<div id="nav">
-						<ul class="nav-menu">
-							<li class="nav-menu-item">
-								<a href="#profile" class="nav-menu-item-link">Profile</a>
-							</li>
-							<li class="nav-menu-item">
-								<a href="#works" class="nav-menu-item-link">Works</a>
-							</li>
-							<li class="nav-menu-item">
-								<a href="#contact" class="nav-menu-item-link">Contact</a>
-							</li>
-						</ul>
-					</div>
 				</section>
-				<section id="profile" class="section">
+				<section id="profile">
 					<h2>Profile</h2>
 					<table>
 						<tr>
@@ -89,7 +66,7 @@
 						</tr>
 					</table>
 				</section>
-				<section id="works" class="section">
+				<section id="works">
 					<h2>Works</h2>
 					<div class="container">
 						<div class="box1">
@@ -137,7 +114,7 @@
 						</div>
 					</div>
 				</section>
-				<section id="contact" class="section">
+				<section id="contact">
 					<h2>Contact</h2>
 					<h3>Please feel free to contact us</h3>
 					<div class="mail">
@@ -150,6 +127,14 @@
 					<h2>&copy; yamamoto91 All right reserved.</h2>
 				</section>
 			</footer>
+		</div>
+		<div id="nav">
+			<ul>
+				<li>Top</li>
+				<li>profile</li>
+				<li>Works</li>
+				<li>Contact</li>
+			</ul>
 		</div>
 		<script src="jquery-3.6.0.min.js"></script>
 		<script src="script.js"></script>
