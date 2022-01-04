@@ -136,13 +136,17 @@ body {
 	transition: opacity .5s, visibility .5s;
 }
 
+#cover #nav ::marker {
+	color: lightgray;
+}
+
 #cover #nav.show {
 	opacity: 1;
 	visibility: visible;
 }
 
 #cover #nav ul {
-	padding: 0 2rem;
+	padding: 0 1.5rem;
 }
 
 #cover #nav ul li {
@@ -249,6 +253,9 @@ body {
 	list-style-type: disclosure-closed;
 }
 
+#works .container .box2 ::marker {
+	color: lightgray;
+}
 
 @media (min-width: 769px) {
 	#works {
