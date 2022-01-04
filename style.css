@@ -151,6 +151,7 @@ body {
 
 #cover #nav ul li {
 	list-style-type: disclosure-closed;
+	margin: 1rem 0;
 }
 
 #cover #nav ul li a {
