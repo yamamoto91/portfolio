@@ -44,16 +44,9 @@ document.getElementById('form').select.onchange = function() {
   location.href = document.getElementById('form').select.value;
 }
 
-//ドロワー
-$(document).ready(function(){
-  $('#open_nav').on('click', function(){
-    $('#wrapper, #nav').toggleClass('show');
-  });
-});
-
 //スムーススクロール
-$('.nav-menu-item-link').on('click', function(event) {
-  event.preventDefault()
+$('.nav-menu-item-link').on('click', function(e) {
+  e.preventDefault()
 
   const sectionId = $(this).attr('href');
   const sectionOffsetTop = $(sectionId).offset().top
@@ -61,4 +54,9 @@ $('.nav-menu-item-link').on('click', function(event) {
     top: sectionOffsetTop,
     behavior: "smooth",
   });
+});
+
+//spナビ表示
+$('.nav-toggle').on('click', function() {
+  $('.nav-toggle, #nav').toggleClass('show');
 });
