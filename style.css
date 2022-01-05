@@ -240,6 +240,18 @@ body {
 	margin-bottom: 3rem;
 }
 
+.js-fadeUp {
+  opacity: 0; /* 最初は非表示 */
+  transform: translateY(30px); /* 下に30pxの位置から */
+  transition: opacity 1s, transform 1s; /* 透過率と縦方向の移動を0.8秒 */
+}
+/* フェードイン(スクロールした後) */
+.js-fadeUp.is-inview {
+  opacity: 1; /* 表示領域に入ったら表示 */
+  transform: translateY(0); /* 30px上に移動する */
+}
+
+
 #works .container .box1 img {
 	width: 100%;
 	border: solid 0.1rem lightgray;

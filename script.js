@@ -60,3 +60,10 @@ $('.nav-menu-item-link').on('click', function(e) {
 $('.nav-toggle').on('click', function() {
   $('.nav-toggle, #nav').toggleClass('show');
 });
+
+//imgをフワッと表示
+$(function () {
+  $(".js-fadeUp").on("inview", function () {
+    $(this).addClass("is-inview");
+  });
+});
