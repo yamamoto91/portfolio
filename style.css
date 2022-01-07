@@ -356,3 +356,17 @@ body {
 		font-size: 2rem;
 	}
 }
+
+#page-top {
+	bottom: 2rem;
+  position: fixed;
+  right: 1rem;
+}
+
+#page-top a {
+	background-color: lightgray;
+	opacity: 0.6;
+	color: #ffffff;
+	padding: 1.5rem 1rem;
+	font-size: 3rem;
+}
